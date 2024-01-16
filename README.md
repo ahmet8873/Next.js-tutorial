@@ -48,7 +48,7 @@ Understand how to perform server actions like creating, updating, and deleting d
 
 ## 8. Suspense and Streaming
 
-Delve into the world of suspense and streaming in Next.js. Learn how to enhance user experience by efficiently loading and displaying content.
+Dive into the world of suspense and streaming in Next.js. Learn how to enhance user experience by efficiently loading and displaying content.
 
 ## 9. Caching
 
