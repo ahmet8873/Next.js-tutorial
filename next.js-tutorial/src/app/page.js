@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ProductCard from "./components/ProductCard";
 export default function Home() {
   return (
     <main>
@@ -12,6 +13,7 @@ export default function Home() {
           <Link href="/users/new">New User</Link>
         </li>
       </ul>
+      <ProductCard></ProductCard>
     </main>
   );
 }
