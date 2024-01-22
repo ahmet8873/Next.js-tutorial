@@ -66,7 +66,7 @@ const HydrationSuppressedComponent = ({ data }) => {
 export default HydrationSuppressedComponent;
 ```
 
-## 1. MongoDB connection using mongoose in Next.js
+## MongoDB connection using mongoose in Next.js
 
 ```
 import mongoose from "mongoose"
@@ -86,4 +86,38 @@ export const connectToDb = async () => {
     throw new Error(error);
   }
 };
+```
+
+We are verifying the existence of a connection; please refrain from establishing a new connection each time.
+
+## Creating Mongoose Models
+
+```
+const postSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+    },
+    desc: {
+      type: String,
+      required: true,
+    },
+    img: {
+      type: String,
+    },
+    userId: {
+      type: String,
+      required: true,
+    },
+    slug: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+  },
+  { timestamps: true }
+);
+
+export const Post = mongoose.models?.Post || mongoose.model("Post", postSchema);
 ```
