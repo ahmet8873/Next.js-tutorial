@@ -179,3 +179,22 @@ const SinglePostPage = async ({ params,searchParams }) => {
   ....
 <!-- we can directly get params and searchParams (query) -->
 ```
+
+# how to genrate dynamic metaData in Next.js
+
+Config-based Metadata: Export a static metadata object or a dynamic generateMetadata function in a layout.js or page.js file.
+File-based Metadata: Add static or dynamically generated special files to route segments.
+With both these options, Next.js will automatically generate the relevant <head> elements for your pages. You can also create dynamic OG images using the ImageResponse constructor.
+
+```
+export const generateMetadata = async ({ params }) => {
+  const { slug } = params;
+
+  const post = await getPost(slug);
+
+  return {
+    title: post.title,
+    description: post.desc,
+  };
+};
+```
