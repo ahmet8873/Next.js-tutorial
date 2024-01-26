@@ -170,3 +170,12 @@ const NavigationTestPage = () => {
 export default NavigationTestPage
 
 ```
+
+# Navigation for server side components in Next.js
+
+```
+const SinglePostPage = async ({ params,searchParams }) => {
+  const { slug } = params;
+  ....
+<!-- we can directly get params and searchParams (query) -->
+```
