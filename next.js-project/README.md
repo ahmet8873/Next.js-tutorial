@@ -187,9 +187,3 @@ This repository hosts a comprehensive Next.js tutorial covering various aspects 
 ## Next.js 14 Admin Dashboard Tutorial with Server Actions
 
 - Building an admin dashboard in my Next.js application using server actions.
-
-## Outro
-
-- Concluding the tutorial with key takeaways and closing remarks.
-
-Feel free to explore the sections that align with your interests, and leverage the examples provided to enhance your Next.js proficiency. Happy coding!
