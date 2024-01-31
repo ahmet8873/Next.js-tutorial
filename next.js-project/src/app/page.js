@@ -1,6 +1,7 @@
-import styles from "./homePage.module.css";
 import Image from "next/image";
-export default function Home() {
+import styles from "./home.module.css";
+
+const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
@@ -17,9 +18,11 @@ export default function Home() {
           <Image src="/brands.png" alt="" fill className={styles.brandImg} />
         </div>
       </div>
-      <div className={styles.imageContainer}>
+      <div className={styles.imgContainer}>
         <Image src="/hero.gif" alt="" fill className={styles.heroImg} />
       </div>
     </div>
   );
-}
+};
+
+export default Home;
