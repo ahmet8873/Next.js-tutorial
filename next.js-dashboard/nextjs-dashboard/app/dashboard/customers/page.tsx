@@ -1,3 +1,6 @@
+export const metadata = {
+  title: 'Customers',
+};
 const customersPage = () => {
   return <div>customersPage</div>;
 };
