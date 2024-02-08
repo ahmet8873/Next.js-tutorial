@@ -1,3 +1,11 @@
+## Live
+
+https://next-js-tutorial-three-gray.vercel.app/
+
+test credentials:
+user@nextmail.com
+123456
+
 ## Next.js App Router Course - Starter
 
 This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
